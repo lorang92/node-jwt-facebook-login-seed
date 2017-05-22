@@ -1,0 +1,29 @@
+{
+  "name": "jwt-facebook-login-seed",
+  "version": "1.0.0",
+  "description": "a simple seed for facebook-login with jwt-token",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorang92/node-jwt-facebook-login-seed.git"
+  },
+  "author": "Steffen Lorang Ekeberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lorang92/node-jwt-facebook-login-seed/issues"
+  },
+  "homepage": "https://github.com/lorang92/node-jwt-facebook-login-seed#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "request": "^2.81.0"
+  }
+}
