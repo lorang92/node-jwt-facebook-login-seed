@@ -2,6 +2,7 @@ var express = require('express');
 var mongoose = require('mongoose');
 var app = express();
 var bodyParser = require('body-parser');
+var authenticationRouter = require('./routes/authentication/index');
 var userRouter = require('./routes/user/index');
 
 var dbConfig = require('./config/db.config');
@@ -28,7 +29,10 @@ app.use(function (err, req, res, next) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+//init routers
 app.use('/', userRouter);
+app.use('/', authenticationRouter);
+
 
 
 app.listen(serverConfig.PORT, function () {

@@ -4,13 +4,9 @@ var middleware = require('./middleware/index');
 
 var router = express.Router();
 
-router.post('/login',
-    middleware.fetchUserFromFB
+router.get('/users',
+    middleware.findAllUser,
+    middleware.returnSuccessWithAllUsers
 );
 
-router.get('/test', function (req, res) {
-    return res.status(200).json({message: "you did it!"});
-});
-
 module.exports = router;
-
