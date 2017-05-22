@@ -9,7 +9,7 @@ router.post('/login',
 );
 
 router.get('/test', function (req, res) {
-    return res.status(200).send();
+    return res.status(200).json({message: "you did it!"});
 });
 
 module.exports = router;
