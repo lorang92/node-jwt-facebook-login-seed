@@ -13,7 +13,7 @@ router.post('/authenticateByFbToken',
 
 router.post('/validateAccessToken',
     middleware.authenticate,
-    middleware.returnSuccessfullValidation
+    middleware.returnSuccessfulValidation
 );
 
 module.exports = router;

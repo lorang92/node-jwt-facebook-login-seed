@@ -37,9 +37,6 @@ module.exports = {
                 userRepository.createUser(req.data.user.name, req.data.user.id, function(err, newUser) {
                     if(err || !newUser) return res.status(500).send();
                     req.data.user = newUser;
-                    console.log('inside created new user');
-                    console.log('user:' + newUser);
-
                     next();
                 });
             }
@@ -78,7 +75,7 @@ module.exports = {
         });
     },
 
-    returnSuccessfullValidation: function(req, res, next){
+    returnSuccessfulValidation: function(req, res, next){
         return res.status(200).json({message: 'access token is valid.'});
     },
 

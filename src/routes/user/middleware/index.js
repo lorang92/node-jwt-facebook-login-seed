@@ -2,7 +2,7 @@ var userRepository = require('../repository');
 
 
 module.exports =  {
-    findAllUser: function(req, res, next) {
+    findAllUsers: function(req, res, next) {
         userRepository.findAllUsers(function(err, users) {
             if(err)return res.status(500).send();
             if(!users) return res.status(404).send();

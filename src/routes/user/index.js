@@ -5,7 +5,7 @@ var middleware = require('./middleware/index');
 var router = express.Router();
 
 router.get('/users',
-    middleware.findAllUser,
+    middleware.findAllUsers,
     middleware.returnSuccessWithAllUsers
 );
 
