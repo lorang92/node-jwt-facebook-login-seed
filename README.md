@@ -16,4 +16,4 @@ The endpoint POST /authenticateByFbToken takes facebook oauth access token in th
 
 The endpoint POST /verifyAccessToken can be used to validate the jwt access token by supplying the token in the header field "Authorization".
 
-The endpoint GET /users returns a list of persisted users. 
+The endpoint GET /users returns a list of users. 
