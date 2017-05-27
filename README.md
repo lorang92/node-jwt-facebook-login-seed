@@ -6,7 +6,7 @@ A simple seed for a node express server using facebook's-oauth authentication. U
 
 1. git clone 
 2. npm install
-3. node src
+3. node ./src
 
 Requires a running instance of mongoDB. The mongoDB settings can be changed in under "./src/config/db.config.js".
 
